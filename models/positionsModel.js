@@ -3,10 +3,10 @@ const knex = require("knex")(require("../knexfile"));
 
 Model.knex(knex);
 
-class userModel extends Model {
+class positionsModel extends Model {
   static get tableName() {
-    return "users";
+    return "positions";
   }
 }
 
-modeule.exports = userModel;
+module.exports = positionsModel;
