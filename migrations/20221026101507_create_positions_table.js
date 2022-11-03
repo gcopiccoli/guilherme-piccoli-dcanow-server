@@ -6,7 +6,8 @@ exports.up = function (knex) {
   return knex.schema.createTable("positions", (table) => {
     table.increments("id").primary();
     table.integer("user_id").unsigned().notNullable();
-    table.integer("stock_id").unsigned().notNullable();
+    table.string("stock_symbol").notNullable().unique();
+    table.integer("stock_rank").unsigned().notNullable();
     table.integer("initial_value_invested").unsigned().notNullable();
     table.integer("average_price").unsigned().notNullable();
     table.integer("quantity").unsigned().notNullable();
@@ -15,12 +16,6 @@ exports.up = function (knex) {
       .foreign("user_id")
       .references("id")
       .inTable("users")
-      .onUpdate("CASCADE")
-      .onDelete("CASCADE");
-    table
-      .foreign("stock_id")
-      .references("id")
-      .inTable("stocks")
       .onUpdate("CASCADE")
       .onDelete("CASCADE");
   });

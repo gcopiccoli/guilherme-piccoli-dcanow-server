@@ -15,9 +15,7 @@ exports.getUser = (req, res) => {
 };
 
 exports.getUserPositions = (req, res) => {
-  knex("users")
-    .join("positions", "positions.user_id", "users.id")
-    .options({ nestTables: true })
+  knex("positions")
     .where({ user_id: req.params.userId })
     .then((users) => {
       res.status(200).json(users);
@@ -29,34 +27,9 @@ exports.getUserPositions = (req, res) => {
     });
 };
 
-exports.createNewPosition = (req, res) => {
-  knex("position")
-    // .join("positions", "positions.user_id", "users.id")
-    // .options({ nestTables: true })
-    // .insert(req.body)
-    .insert({
-      user_id: req.params.userId,
-      stock_id: req.body.stock_id,
-      stock_rank: req.body.stock_rank,
-      initial_value_invested: req.body.initial_value_invested,
-      average_price: req.body.average_price,
-      quantity: req.body.quantity,
-    })
-    .then((newPositionIds) => {
-      res.status(201).json({ newPositionId: newPositionIds[0] });
-    })
-    .catch((err) => {
-      res
-        .status(400)
-        .json({ message: `Error creating position: ${err.message} ` });
-    });
-};
-
 exports.updatePosition = (req, res) => {
   const positionId = req.params.positionId;
   knex("positions")
-    // .join("positions", "positions.user_id", "users.id")
-    // .options({ nestTables: true })
     .where({ id: positionId })
     .update(req.body)
     .then((numRecordsUpdated) => {
@@ -70,8 +43,6 @@ exports.updatePosition = (req, res) => {
 
   const fetchPosition = () => {
     knex("positions")
-      //   .join("positions", "positions.user_id", "users.id")
-      //   .options({ nestTables: true })
       .where({ id: positionId })
       .then((position) => {
         res.status(201).json(position);
@@ -86,8 +57,6 @@ exports.updatePosition = (req, res) => {
 
 exports.deletePosition = (req, res) => {
   knex("positions")
-    // .join("positions", "positions.user_id", "users.id")
-    // .options({ nestTables: true })
     .where({ id: req.params.positionId })
     .del()
     .then(() => {
