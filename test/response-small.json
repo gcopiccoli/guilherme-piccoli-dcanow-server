@@ -1,0 +1,120 @@
+[
+  {
+    "symbol" : "AAPL",
+    "name" : "Apple Inc.",
+    "price" : 148.96,
+    "exchange" : "NASDAQ Global Select",
+    "exchangeShortName" : "NASDAQ",
+    "type" : "stock"
+  }, {
+    "symbol" : "MSFT",
+    "name" : "Microsoft Corporation",
+    "price" : 225.18,
+    "exchange" : "NASDAQ Global Select",
+    "exchangeShortName" : "NASDAQ",
+    "type" : "stock"
+  }, 
+  {
+    "symbol" : "FB",
+    "name" : "Meta Platforms, Inc.",
+    "price" : 196.64,
+    "exchange" : "NASDAQ Global Select",
+    "exchangeShortName" : "NASDAQ",
+    "type" : "stock"
+  }, 
+  {
+    "symbol" : "T",
+    "name" : "AT&T Inc.",
+    "price" : 18.6,
+    "exchange" : "New York Stock Exchange",
+    "exchangeShortName" : "NYSE",
+    "type" : "stock"
+  },
+  {
+    "symbol" : "NKE",
+    "name" : "NIKE, Inc.",
+    "price" : 93.25,
+    "exchange" : "New York Stock Exchange",
+    "exchangeShortName" : "NYSE",
+    "type" : "stock"
+  },
+  {
+    "symbol" : "PG",
+    "name" : "The Procter & Gamble Company",
+    "price" : 134.33,
+    "exchange" : "New York Stock Exchange",
+    "exchangeShortName" : "NYSE",
+    "type" : "stock"
+  },
+  {
+    "symbol" : "TSLA",
+    "name" : "Tesla, Inc.",
+    "price" : 223.87,
+    "exchange" : "NASDAQ Global Select",
+    "exchangeShortName" : "NASDAQ",
+    "type" : "stock"
+  }, {
+    "symbol" : "CRM",
+    "name" : "Salesforce, Inc.",
+    "price" : 153.73,
+    "exchange" : "New York Stock Exchange",
+    "exchangeShortName" : "NYSE",
+    "type" : "stock"
+  }, {
+    "symbol" : "ATVI",
+    "name" : "Activision Blizzard, Inc.",
+    "price" : 73.43,
+    "exchange" : "NASDAQ Global Select",
+    "exchangeShortName" : "NASDAQ",
+    "type" : "stock"
+  }, {
+    "symbol" : "SQ",
+    "name" : "Block, Inc.",
+    "price" : 57.11,
+    "exchange" : "New York Stock Exchange",
+    "exchangeShortName" : "NYSE",
+    "type" : "stock"
+  }, {
+    "symbol" : "MMM",
+    "name" : "3M Company",
+    "price" : 125.19,
+    "exchange" : "New York Stock Exchange",
+    "exchangeShortName" : "NYSE",
+    "type" : "stock"
+  }{
+    "symbol" : "T",
+    "name" : "AT&T Inc.",
+    "price" : 18.6,
+    "exchange" : "New York Stock Exchange",
+    "exchangeShortName" : "NYSE",
+    "type" : "stock"
+  }, {
+    "symbol" : "C",
+    "name" : "Citigroup Inc.",
+    "price" : 46.24,
+    "exchange" : "New York Stock Exchange",
+    "exchangeShortName" : "NYSE",
+    "type" : "stock"
+  }, {
+    "symbol" : "VALE",
+    "name" : "Vale S.A.",
+    "price" : 13.1,
+    "exchange" : "New York Stock Exchange",
+    "exchangeShortName" : "NYSE",
+    "type" : "stock"
+  }, {
+    "symbol" : "MS",
+    "name" : "Morgan Stanley",
+    "price" : 84.38,
+    "exchange" : "New York Stock Exchange",
+    "exchangeShortName" : "NYSE",
+    "type" : "stock"
+  }, {
+    "symbol" : "JPM",
+    "name" : "JPMorgan Chase & Co.",
+    "price" : 128.09,
+    "exchange" : "New York Stock Exchange",
+    "exchangeShortName" : "NYSE",
+    "type" : "stock"
+  }
+]
