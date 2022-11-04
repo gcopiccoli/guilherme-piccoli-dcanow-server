@@ -2,7 +2,10 @@ const router = require("express").Router();
 const positionsController = require("../controllers/positionsController");
 const userController = require("../controllers/userController");
 
-router.route("/:userId").get(positionsController.getUser);
+router.get("/:userId").get(positionsController.getUser);
+router.route("/getuserbyemail").get(userController.getUserByEmail);
+
+router.route("/register").post(userController.createNewUser);
 router
   .route("/:userId/positions/all")
   .get(positionsController.getUserPositions);

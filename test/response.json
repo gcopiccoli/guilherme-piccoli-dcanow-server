@@ -1,5 +1,4 @@
-[
-  {
+[{
     "symbol" : "AAPL",
     "name" : "Apple Inc.",
     "price" : 148.96,
@@ -13,40 +12,35 @@
     "exchange" : "NASDAQ Global Select",
     "exchangeShortName" : "NASDAQ",
     "type" : "stock"
-  }, 
-  {
+  }, {
     "symbol" : "FB",
     "name" : "Meta Platforms, Inc.",
     "price" : 196.64,
     "exchange" : "NASDAQ Global Select",
     "exchangeShortName" : "NASDAQ",
     "type" : "stock"
-  }, 
-  {
+  }, {
     "symbol" : "T",
     "name" : "AT&T Inc.",
     "price" : 18.6,
     "exchange" : "New York Stock Exchange",
     "exchangeShortName" : "NYSE",
     "type" : "stock"
-  },
-  {
+  }, {
     "symbol" : "NKE",
     "name" : "NIKE, Inc.",
     "price" : 93.25,
     "exchange" : "New York Stock Exchange",
     "exchangeShortName" : "NYSE",
     "type" : "stock"
-  },
-  {
+  }, {
     "symbol" : "PG",
     "name" : "The Procter & Gamble Company",
     "price" : 134.33,
     "exchange" : "New York Stock Exchange",
     "exchangeShortName" : "NYSE",
     "type" : "stock"
-  },
-  {
+  }, {
     "symbol" : "TSLA",
     "name" : "Tesla, Inc.",
     "price" : 223.87,
@@ -81,7 +75,7 @@
     "exchange" : "New York Stock Exchange",
     "exchangeShortName" : "NYSE",
     "type" : "stock"
-  }{
+  }, {
     "symbol" : "T",
     "name" : "AT&T Inc.",
     "price" : 18.6,
@@ -116,5 +110,4 @@
     "exchange" : "New York Stock Exchange",
     "exchangeShortName" : "NYSE",
     "type" : "stock"
-  }
-]
+  }]
