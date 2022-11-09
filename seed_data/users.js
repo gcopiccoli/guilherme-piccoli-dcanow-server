@@ -1,16 +1,16 @@
 module.exports = [
   {
     id: 1,
-    first_name: "Guilherme",
-    last_name: "Piccoli",
+    name: "Guilherme",
     email: "g.piccoli@dcanow.com",
     password: "abcde",
+    auth_type: "",
   },
   {
     id: 2,
-    first_name: "Johnny",
-    last_name: "Appleseed",
+    name: "Johnny",
     email: "j.appleseed@dcanow.com",
     password: "abcde",
+    auth_type: "",
   },
 ];

@@ -6,7 +6,7 @@ exports.up = function (knex) {
   return knex.schema.createTable("positions", (table) => {
     table.increments("id").primary();
     table.integer("user_id").unsigned().notNullable();
-    table.string("stock_symbol").notNullable().unique();
+    table.string("stock_symbol").notNullable();
     table.integer("stock_rank").unsigned().notNullable();
     table.integer("initial_value_invested").unsigned().notNullable();
     table.integer("average_price").unsigned().notNullable();
