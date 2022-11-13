@@ -1,5 +1,4 @@
 const positionsModel = require("../models/positionsModel");
-// const uuid = require();
 const userModel = require("../models/userModel");
 
 exports.createNewPositionForUser = async (req, res) => {
@@ -22,7 +21,6 @@ exports.createNewPositionForUser = async (req, res) => {
 };
 
 exports.createNewUser = async (req, res) => {
-  // generate uuid
   try {
     await userModel.createNewUser(req.body);
     res.status(201).json({ message: `Successfully added user` });

@@ -6,9 +6,7 @@ const positionsData = require("../seed_data/positions");
  * @returns { Promise<void> }
  */
 
-//TO DO: CHANGE FILE NAME TO USERS_POSITIONS.JS
 exports.seed = async function (knex) {
-  // Deletes ALL existing entries
   await knex("users").del();
   await knex("users").insert(usersData);
   await knex("positions").del();

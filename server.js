@@ -20,7 +20,6 @@ app.get("/test-data", (req, res) => {
 
 const userRoutes = require("./routes/userRoutes");
 
-//TO DO: ADD /USERS TO THE MAIN URL
 app.use("/", userRoutes);
 
 app.listen(PORT, () => {

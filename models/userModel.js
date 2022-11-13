@@ -3,12 +3,6 @@ const knex = require("knex")(require("../knexfile"));
 
 Model.knex(knex);
 
-// class userModel extends Model {
-//   static get tableName() {
-//     return "users";
-//   }
-// }
-
 exports.createNewPosition = (userId, position) => {
   return knex("positions").insert({
     user_id: +userId,
@@ -32,5 +26,3 @@ exports.createNewUser = (user) => {
 exports.getUserByEmail = (email) => {
   return knex("users").where("email", email).first();
 };
-
-// modeule.exports = userModel;
